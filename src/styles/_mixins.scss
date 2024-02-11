@@ -1,0 +1,24 @@
+// Variables
+$font-family: "Source Sans Pro", var(--default-font-family);
+$primary-color: #99ca3a;
+$secondary-color: #444444;
+$accent-color: #cbfd68;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-space-between {
+  @include flex-center;
+  justify-content: space-between;
+}
+
+@mixin button-styles {
+  @include flex-center;
+  gap: 8px;
+  padding: 8px 24px;
+  border-radius: 16px;
+}

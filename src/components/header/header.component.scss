@@ -1,0 +1,126 @@
+@import "../../styles/mixins";
+
+.component {
+  & > div {
+    @include flex-space-between;
+    padding: 0 80px;
+  }
+
+  .banner-component {
+    height: 48px;
+    background: $secondary-color;
+
+    .content-message {
+      height: 28px;
+      color: #ffffff;
+      font: {
+        family: $font-family;
+        size: 18px;
+        weight: 400;
+        line-height: 28px;
+      }
+      text-align: left;
+    }
+  }
+
+  .sub-component {
+    height: 96px;
+    background: #ffffff;
+  }
+}
+
+.social-media-icons,
+.country-selector {
+  @include flex-center;
+  gap: 12px;
+}
+
+.country-selector {
+  padding: 8px 24px;
+  background: #ffffff;
+  border: 1px solid $primary-color;
+  border-radius: 16px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  .country-name {
+    color: #000000;
+    font: {
+      family: $font-family;
+      size: 14px;
+      weight: 400;
+      line-height: 16px;
+    }
+    text-align: center;
+  }
+
+  .arrow-icon {
+    width: 12px;
+    height: 12px;
+    background-size: cover;
+    color: #000;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.go-button,
+.button,
+.button-white {
+  @include button-styles;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.go-button {
+  background: linear-gradient(135deg, $primary-color, $accent-color);
+
+  .go-text {
+    color: #ffffff;
+    font: {
+      family: $font-family;
+      size: 14px;
+      weight: 400;
+      line-height: 16px;
+    }
+    text-align: center;
+  }
+}
+
+.button {
+  background: $primary-color;
+
+  .button-text-white {
+    color: #ffffff;
+    font: {
+      family: $font-family;
+      size: 14px;
+      weight: 600;
+      line-height: 16px;
+    }
+    text-align: center;
+  }
+}
+
+.button-white {
+  background: #ffffff;
+  border: 1px solid $primary-color;
+
+  .button-text-green {
+    color: $primary-color;
+    font: {
+      family: $font-family;
+      size: 14px;
+      weight: 400;
+      line-height: 16px;
+    }
+    text-align: center;
+  }
+}

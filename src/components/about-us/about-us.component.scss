@@ -1,0 +1,160 @@
+@import "../../styles/mixins";
+
+.why-study-at-boxing-english {
+  padding: 60px 80px;
+  background: url(../../assets/images/layout.png) no-repeat center;
+  background-size: cover;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.why-choose-boxing-education {
+  font-family: Source Sans Pro, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+}
+
+.study-details-frame {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.choose-text,
+.question-icon {
+  color: #000000;
+}
+
+.education-name {
+  color: #99ca3a;
+}
+
+.detail-item {
+  gap: 10px;
+  width: 25%;
+}
+
+.number {
+  color: #99ca3a;
+  font-family: Marmelad, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 76px;
+  text-align: center;
+}
+
+.region {
+  color: #000000;
+  font-family: Source Sans Pro, var(--default-font-family);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+
+.button-wrapper {
+  @include flex-center;
+  margin-top: 50px;
+
+  .button-green {
+    width: 172px;
+    padding: 16px 32px 16px 32px;
+    cursor: pointer;
+    background: #99ca3a;
+    border: none;
+    border-radius: 16px;
+
+    span {
+      color: #ffffff;
+      font-family: Source Sans Pro, var(--default-font-family);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+}
+
+.trial-experience-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 60px 120px 60px 120px;
+  background: url(../../assets/images/frame-bg.png) no-repeat center;
+  background-size: cover;
+}
+
+.trial-experience-title {
+  color: #000000;
+  font-family: Source Sans Pro, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.trial-experience-content {
+  @include flex-space-between;
+  gap: 50px;
+}
+
+.trial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 28%;
+  height: 520px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+.trial-image {
+  background-size: cover;
+}
+
+.trial-card-body {
+  padding: 25px;
+
+  .tutors-for-students {
+    color: #000000;
+    font-family: Source Sans Pro, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+  }
+
+  .golden-age-info {
+    color: #000000;
+    font-family: Source Sans Pro, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+.start-trial-button {
+  width: 172px;
+  padding: 16px 32px;
+  cursor: pointer;
+  background: #99ca3a;
+  border: none;
+  border-radius: 16px;
+}
+
+.start-trial-label {
+  color: #ffffff;
+  font-family: Source Sans Pro, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}

@@ -1,0 +1,211 @@
+.our-srvices-wrapper {
+  padding: 60px 120px 60px 120px;
+  background: #f5faeb;
+  .our-srvices-heading {
+    margin-bottom: 32px;
+    h3 {
+      font-size: 48px;
+      line-height: 56px;
+      font-weight: 700;
+    }
+  }
+  .our-srvices-slider-content {
+    display: flex;
+    justify-content: space-between;
+    .our-srvices-left-content {
+      flex: 0.6;
+      h3 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-top: 24px;
+      }
+      p {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 20px auto;
+      }
+      button {
+        width: 172px;
+        padding: 16px 32px;
+        cursor: pointer;
+        background: #99ca3a;
+        border: none;
+        border-radius: 16px;
+        color: #ffffff;
+        font-family: Source Sans Pro, var(--default-font-family);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+    }
+    .our-srvices-right-content {
+      h6 {
+        font-size: 36px;
+        line-height: 44px;
+        text-align: right;
+        color: #7aa22e;
+        font-weight: 700;
+        font-family: Source Sans Pro, var(--default-font-family);
+      }
+    }
+  }
+}
+
+.curriculum-systems-wrapper {
+  padding: 60px 120px 60px 120px;
+  background: #ffffff;
+  box-shadow: inset #0000001a 0 12px 32px 0;
+  .curriculum-systems-heading {
+    h3 {
+      text-align: center;
+      font-size: 36px;
+      line-height: 44px;
+      font-weight: 700;
+    }
+    span {
+      color: #99ca3a;
+    }
+  }
+  .curriculum-systems-content-wrapper {
+    display: flex;
+    margin: 40px auto;
+    .curriculum-systems-content {
+      background-image: url("../../assets/images/bg-overlay.png");
+      display: flex;
+      width: 735px;
+      background-size: cover;
+      height: 212px;
+      align-items: center;
+      background-position: right;
+
+      .curriculum-systems-left-content {
+        flex: 1;
+        span {
+          font-size: 28px;
+          line-height: 36px;
+          font-weight: 700;
+        }
+        h4 {
+          font-size: 28px;
+          line-height: 28px;
+          font-weight: 700;
+          margin: 8px 0 10px;
+        }
+        h6 {
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 6px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+        button {
+          width: 160px;
+          padding: 14px 32px 14px 32px;
+          border-radius: 16px;
+          border: 0;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .curriculum-systems-content1 {
+    justify-content: flex-start;
+    h4 {
+      color: #ff587c;
+    }
+    button {
+      background-color: #ff587c;
+    }
+  }
+  .curriculum-systems-content2 {
+    justify-content: flex-end;
+    h4 {
+      color: #8dc63f;
+    }
+    button {
+      background-color: #8dc63f;
+    }
+  }
+  .curriculum-systems-content3 {
+    justify-content: flex-start;
+    h4 {
+      color: #05b9f6;
+    }
+    button {
+      background-color: #05b9f6;
+    }
+  }
+}
+
+.tech-wrapper {
+  padding: 60px 120px 60px 120px;
+  background: #ffffff;
+  .tech-wrapper-heading {
+    margin-bottom: 40px;
+    div {
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        font-size: 48px;
+        color: #2a2a2a;
+        font-weight: 700;
+      }
+      button {
+        width: 204px;
+        padding: 16px 32px 16px 32px;
+        border-radius: 16px;
+        border: 0;
+        background: #99ca3a;
+        color: #fff;
+      }
+    }
+    p {
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 400;
+      margin-top: 16px;
+    }
+  }
+
+  .tech-grid-content-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+    height: 100%;
+    width: 300px;
+    .tech-grid-content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s ease;
+      padding: 15px;
+      color: #fff;
+      button {
+        margin-top: 10px;
+        padding: 5px;
+      }
+    }
+    &:hover {
+      .tech-grid-content {
+        top: 65%;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.tech-grid-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
